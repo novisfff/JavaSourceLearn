@@ -13,11 +13,9 @@ import java.util.HashMap;
 public class test {
 
     public static void main(String[] args) {
-        HashMap<String, Double> hashMap = new HashMap<>();
-        System.out.println(7);
-
-        hashMap.put("a", 1.0);
-        hashMap.put("a", 2.1);
+        new Thread(() -> {
+            System.out.println(1);
+        }).start();
 
     }
 }
