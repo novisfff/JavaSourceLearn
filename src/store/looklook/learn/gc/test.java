@@ -12,7 +12,7 @@ public class test {
 
     public static void main(String[] args) {
         for (int i = 0; i < 1000000; i++) {
-            new Person(1, "无名氏");
+            new Person(1, "无名氏", i);
         }
         System.out.println(Person.currentNum);
     }
